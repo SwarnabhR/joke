@@ -1,0 +1,22 @@
+{
+    "name": "Joke Generator",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+    "forwardPorts": [
+      3000
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "eslint.enable": true,
+          "eslint.run": "onType",
+          "files.autoSave": "onWindowChange"
+        },
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "msjsdiag.vscode-react-native"
+        ]
+      }
+    },
+    "postCreateCommand": "npm install"
+  }
